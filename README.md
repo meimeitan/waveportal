@@ -18,7 +18,8 @@ The blog post associated with this repository narrates the journey of a cloud ex
 5) DNS Precision Calibration
 6) Rigorous Auditing for Reliability
 
-https://github.com/meimeitan/waveportal/blob/main/Web%20portal%20migrate%20to%20AWS%20S3.png
+![image](https://github.com/meimeitan/waveportal/assets/58686831/2e5cda22-ee07-4075-8de1-f9afb4bddacc)
+
 Feel free to explore the blog post for an in-depth understanding of the migration process. The associated topics cover crucial aspects of the migration, providing insights into cloud strategies, security considerations, and the overall impact on the reliability of the city's web portal.
 
 Author
