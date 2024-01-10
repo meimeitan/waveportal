@@ -1,0 +1,95 @@
+
+
+```html
+<html>
+<head>
+  <title>City Wave Forecast</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: lightblue;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+    }
+    #map {
+      width: 600px;
+      height: 400px;
+      margin: 0 auto;
+    }
+    #info {
+      width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+  </style>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script>
+    // Replace YOUR_API_KEY with your Google Maps API key
+    // Replace CITY_NAME with your city name
+    // Replace CITY_LAT and CITY_LNG with your city latitude and longitude
+    var CITY_NAME = "Islington";
+    var CITY_LAT = 51.5465;
+    var CITY_LNG = -0.1058;
+
+    // Initialize the map
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: CITY_LAT, lng: CITY_LNG},
+        zoom: 10
+      });
+      var marker = new google.maps.Marker({
+        position: {lat: CITY_LAT, lng: CITY_LNG},
+        map: map,
+        title: CITY_NAME
+      });
+    }
+
+    // Fetch the wave forecast data from Bigsalty API
+    // Replace YOUR_APP_ID with your Bigsalty app ID
+    // Replace YOUR_APP_KEY with your Bigsalty app key
+    function fetchWaveData() {
+      var url = "https://api.bigsalty.com/2.0/forecast/wave?appid=YOUR_APP_ID&appkey=YOUR_APP_KEY&lat=" + CITY_LAT + "&lon=" + CITY_LNG;
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", url, true);
+      xhr.onload = function() {
+        if (xhr.status == 200) {
+          var data = JSON.parse(xhr.responseText);
+          displayWaveData(data);
+        } else {
+          alert("Error fetching wave data");
+        }
+      };
+      xhr.send();
+    }
+
+    // Display the wave forecast data on the web page
+    function displayWaveData(data) {
+      var info = document.getElementById('info');
+      var date = new Date(data.forecast[0].date);
+      var waveHeight = data.forecast[0].wave_height;
+      var wavePeriod = data.forecast[0].wave_period;
+      var waveDirection = data.forecast[0].wave_direction;
+      info.innerHTML = "<h2>Wave Forecast for " + CITY_NAME + "</h2>";
+      info.innerHTML += "<p>Date: " + date.toDateString() + "</p>";
+      info.innerHTML += "<p>Wave Height: " + waveHeight + " m</p>";
+      info.innerHTML += "<p>Wave Period: " + wavePeriod + " s</p>";
+      info.innerHTML += "<p>Wave Direction: " + waveDirection + " °</p>";
+    }
+
+    // Call the functions when the window loads
+    window.onload = function() {
+      initMap();
+      fetchWaveData();
+    };
+  </script>
+</head>
+<body>
+  <h1>City Wave Forecast</h1>
+  <div id="map"></div>
+  <div id="info"></div>
+</body>
+</html>
+```
+
