@@ -1,12 +1,12 @@
-****City Wave Forecast Portal Migration to Amazon S3****
+# ****City Wave Forecast Portal Migration to Amazon S3****
 
 https://medium.com/@iammeitan/elevating-city-wave-forecasts-a-cloud-experts-migration-to-amazon-s3-ccf3e6e5936f
 
-**Overview**
+## **Overview**
 
 This repository documents the strategic migration of a dynamic city web portal, focused on daily wave forecasts, to static website hosting on Amazon S3. The migration process leverages cloud expertise and Amazon S3's robust infrastructure to enhance the reliability and scalability of the city's essential maritime information hub.
 
-**Blog Content**
+## **Blog Content**
 
 The blog post associated with this repository narrates the journey of a cloud expert, detailing the steps taken to migrate the city's wave forecast portal. From analyzing the existing digital landscape to crafting a secure harbor on Amazon S3, the blog provides insights into best practices, strategies, and the overall impact on the reliability of the portal.
 
@@ -18,7 +18,7 @@ The blog post associated with this repository narrates the journey of a cloud ex
 5) DNS Precision Calibration
 6) Rigorous Auditing for Reliability
 
-
+https://github.com/meimeitan/waveportal/blob/main/Web%20portal%20migrate%20to%20AWS%20S3.png
 Feel free to explore the blog post for an in-depth understanding of the migration process. The associated topics cover crucial aspects of the migration, providing insights into cloud strategies, security considerations, and the overall impact on the reliability of the city's web portal.
 
 Author
