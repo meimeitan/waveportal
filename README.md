@@ -4,11 +4,11 @@
 
 ## **Overview**
 
-This repository documents the strategic migration of a dynamic city web portal, focused on daily wave forecasts, to static website hosting on Amazon S3. The migration process leverages cloud expertise and Amazon S3's robust infrastructure to enhance the reliability and scalability of the city's essential maritime information hub.
+This repository documents the strategic migration of a dynamic city web portal, focused on daily wave forecasts, to static website hosting on Amazon S3. The migration process leverages my cloud knowledge and expertise and Amazon S3's robust infrastructure to enhance the reliability and scalability of the city's essential maritime information hub.
 
 ## **Blog Content**
 
-The blog post associated with this repository narrates the journey of a cloud expert, detailing the steps taken to migrate the city's wave forecast portal. From analyzing the existing digital landscape to crafting a secure harbor on Amazon S3, the blog provides insights into best practices, strategies, and the overall impact on the reliability of the portal.
+The blog post associated with this repository narrates the journey of the web portal migration, detailing the steps taken of migration. From analyzing the existing digital landscape to crafting a secure harbor on Amazon S3, the blog provides insights into best practices, strategies, and the overall impact on the reliability of the portal.
 
 **Topics Covered**
 1) Understanding the Local Digital Landscape
